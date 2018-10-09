@@ -1,0 +1,84 @@
+/*
+Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://cKeditor.com/license
+*/
+
+/**
+ * Reset and Default Values
+ */
+.cKe_skin_office2003 *,
+.cKe_skin_office2003 a:hover,
+.cKe_skin_office2003 a:link,
+.cKe_skin_office2003 a:visited,
+.cKe_skin_office2003 a:active
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	text-decoration: none;
+	font: normal normal normal 100% Sans-Serif;
+	width: auto;
+	height: auto;
+	border-collapse: collapse;
+	text-align: left;
+	vertical-align: baseline;
+	white-space: nowrap;
+	cursor: auto;
+	color: #000;
+
+    font-size: 11px;
+    font-family: 'Microsoft Sans Serif' , Tahoma, Arial, Verdana, Sans-Serif;
+}
+
+.cKe_skin_office2003 .cKe_rtl *,
+.cKe_skin_office2003 .cKe_rtl a:hover,
+.cKe_skin_office2003 .cKe_rtl a:link,
+.cKe_skin_office2003 .cKe_rtl a:visited,
+.cKe_skin_office2003 .cKe_rtl a:active,
+.cKe_rtl .cKe_skin_office2003 *,
+.cKe_rtl .cKe_skin_office2003 a:hover,
+.cKe_rtl .cKe_skin_office2003 a:link,
+.cKe_rtl .cKe_skin_office2003 a:visited,
+.cKe_rtl .cKe_skin_office2003 a:active
+{
+	text-align: right;
+}
+
+.cKe_skin_office2003 iframe
+{
+	vertical-align: inherit;	/** For IE */
+}
+
+.cKe_skin_office2003 textarea
+{
+	white-space: pre;
+}
+
+.cKe_skin_office2003 .cKe_browser_gecko textarea
+{
+	cursor: text;
+}
+
+.cKe_skin_office2003 .cKe_browser_gecko textarea[disabled]
+{
+	cursor: default;
+}
+
+.cKe_skin_office2003 input[type="text"],
+.cKe_skin_office2003 input[type="password"]
+{
+	cursor: text;
+}
+
+.cKe_skin_office2003 input[type="text"][disabled],
+.cKe_skin_office2003 input[type="password"][disabled]
+{
+	cursor: default;
+}
+
+.cKe_skin_office2003 fieldset
+{
+	padding: 10px;
+	border: 2px groove #E0DFE3;
+}

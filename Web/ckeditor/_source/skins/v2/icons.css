@@ -1,0 +1,363 @@
+/*
+Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://cKeditor.com/license
+*/
+
+.cKe_skin_v2 .cKe_button_source .cKe_icon
+{
+	background-position: 0 0;
+}
+
+.cKe_skin_v2 .cKe_button_docProps .cKe_icon
+{
+	background-position: 0 -16px;
+}
+
+.cKe_skin_v2 .cKe_button_newpage .cKe_icon
+{
+	background-position: 0 -48px;
+}
+
+.cKe_skin_v2 .cKe_button_preview .cKe_icon
+{
+	background-position: 0 -64px;
+}
+
+.cKe_skin_v2 .cKe_button_cut .cKe_icon
+{
+	background-position: 0 -96px;
+}
+
+.cKe_skin_v2 .cKe_button_copy .cKe_icon
+{
+	background-position: 0 -112px;
+}
+
+.cKe_skin_v2 .cKe_button_paste .cKe_icon
+{
+	background-position: 0 -128px;
+}
+
+.cKe_skin_v2 .cKe_button_pastetext .cKe_icon
+{
+	background-position: 0 -144px;
+}
+
+.cKe_skin_v2 .cKe_button_find .cKe_icon
+{
+	background-position: 0 -240px;
+}
+
+.cKe_skin_v2 .cKe_button_replace .cKe_icon
+{
+	background-position: 0 -256px;
+}
+
+.cKe_skin_v2 .cKe_button_selectAll .cKe_icon
+{
+	background-position: 0 -272px;
+}
+
+.cKe_skin_v2 .cKe_button_removeFormat .cKe_icon
+{
+	background-position: 0 -288px;
+}
+
+.cKe_skin_v2 .cKe_button_bold .cKe_icon
+{
+	background-position: 0 -304px;
+}
+
+.cKe_skin_v2 .cKe_button_italic .cKe_icon
+{
+	background-position: 0 -320px;
+}
+
+.cKe_skin_v2 .cKe_button_underline .cKe_icon
+{
+	background-position: 0 -336px;
+}
+
+.cKe_skin_v2 .cKe_button_striKe .cKe_icon
+{
+	background-position: 0 -352px;
+}
+
+.cKe_skin_v2 .cKe_button_subscript .cKe_icon
+{
+	background-position: 0 -368px;
+}
+
+.cKe_skin_v2 .cKe_button_superscript .cKe_icon
+{
+	background-position: 0 -384px;
+}
+
+.cKe_skin_v2 .cKe_button_table .cKe_icon
+{
+	background-position: 0 -608px;
+}
+
+.cKe_skin_v2 .cKe_button_horizontalrule .cKe_icon
+{
+	background-position: 0 -624px;
+}
+
+.cKe_skin_v2 .cKe_button_smiley .cKe_icon
+{
+	background-position: 0 -640px;
+}
+
+.cKe_skin_v2 .cKe_button_link .cKe_icon
+{
+	background-position: 0 -528px;
+}
+
+.cKe_skin_v2 .cKe_button_unlink .cKe_icon
+{
+	background-position: 0 -544px;
+}
+
+.cKe_skin_v2 .cKe_button_anchor .cKe_icon
+{
+	background-position: 0 -560px;
+}
+
+.cKe_skin_v2 .cKe_button_image .cKe_icon
+{
+	background-position: 0 -576px;
+}
+
+.cKe_skin_v2 .cKe_button_flash .cKe_icon
+{
+	background-position: 0 -592px;
+}
+
+.cKe_skin_v2 .cKe_button_specialchar .cKe_icon
+{
+	background-position: 0 -656px;
+}
+
+.cKe_skin_v2 .cKe_button_pagebreak .cKe_icon
+{
+	background-position: 0 -672px;
+}
+
+.cKe_skin_v2 .cKe_button_print .cKe_icon
+{
+	background-position: 0 -176px;
+}
+
+.cKe_skin_v2 .cKe_button_checkspell .cKe_icon,
+.cKe_skin_v2 .cKe_button_scayt .cKe_icon
+{
+	background-position: 0 -192px;
+}
+
+.cKe_skin_v2 .cKe_button_pagebreak .cKe_icon
+{
+	background-position: 0 -672px;
+}
+
+.cKe_skin_v2 .cKe_button_textcolor .cKe_icon
+{
+	background-position: 0 -704px;
+}
+
+.cKe_skin_v2 .cKe_button_bgcolor .cKe_icon
+{
+	background-position: 0 -720px;
+}
+
+.cKe_skin_v2 .cKe_button_form .cKe_icon
+{
+	background-position: 0 -752px;
+}
+
+.cKe_skin_v2 .cKe_button_checkbox .cKe_icon
+{
+	background-position: 0 -768px;
+}
+
+.cKe_skin_v2 .cKe_button_radio .cKe_icon
+{
+	background-position: 0 -784px;
+}
+
+.cKe_skin_v2 .cKe_button_textfield .cKe_icon
+{
+	background-position: 0 -800px;
+}
+
+.cKe_skin_v2 .cKe_button_textarea .cKe_icon
+{
+	background-position: 0 -816px;
+}
+.cKe_skin_v2 .cKe_button_showblocks .cKe_icon
+{
+	background-position: 0 -1136px;
+}
+
+.cKe_skin_v2 .cKe_button_select .cKe_icon
+{
+	background-position: 0 -832px;
+}
+
+.cKe_skin_v2 .cKe_button_button .cKe_icon
+{
+	background-position: 0 -848px;
+}
+
+.cKe_skin_v2 .cKe_button_imagebutton .cKe_icon
+{
+	background-position: 0 -864px;
+}
+
+.cKe_skin_v2 .cKe_button_hiddenfield .cKe_icon
+{
+	background-position: 0 -880px;
+}
+
+.cKe_skin_v2 .cKe_button_undo .cKe_icon
+{
+	background-position: 0 -208px;
+}
+
+.cKe_skin_v2 .cKe_rtl .cKe_button_undo .cKe_icon
+{
+	background-position: 0 -224px;
+}
+
+.cKe_skin_v2 .cKe_button_redo .cKe_icon
+{
+	background-position: 0 -224px;
+}
+
+.cKe_skin_v2 .cKe_rtl .cKe_button_redo .cKe_icon
+{
+	background-position: 0 -208px;
+}
+
+.cKe_skin_v2 .cKe_button_templates .cKe_icon
+{
+	background-position: 0 -80px;
+}
+
+.cKe_skin_v2 .cKe_button_numberedlist .cKe_icon
+{
+	background-position: 0 -400px;
+}
+
+.cKe_skin_v2 .cKe_button_bulletedlist .cKe_icon
+{
+	background-position: 0 -416px;
+}
+
+.cKe_skin_v2 .cKe_mixed_dir_content .cKe_button_numberedlist .cKe_icon
+{
+	background-position: 0 -1217px;
+}
+
+.cKe_skin_v2 .cKe_mixed_dir_content .cKe_button_bulletedlist .cKe_icon
+{
+	background-position: 0 -1233px;
+}
+
+.cKe_skin_v2 .cKe_button_outdent .cKe_icon
+{
+	background-position: 0 -432px;
+}
+
+.cKe_skin_v2 .cKe_button_indent .cKe_icon
+{
+	background-position: 0 -448px;
+}
+
+.cKe_skin_v2 .cKe_mixed_dir_content .cKe_button_indent .cKe_icon
+{
+	background-position: 0 -1265px;
+}
+
+.cKe_skin_v2 .cKe_mixed_dir_content .cKe_button_outdent .cKe_icon
+{
+	background-position: 0 -1249px;
+}
+
+.cKe_skin_v2 .cKe_button_justifyleft .cKe_icon
+{
+	background-position: 0 -464px;
+}
+
+.cKe_skin_v2 .cKe_button_justifycenter .cKe_icon
+{
+	background-position: 0 -480px;
+}
+
+.cKe_skin_v2 .cKe_button_justifyright .cKe_icon
+{
+	background-position: 0 -496px;
+}
+
+.cKe_skin_v2 .cKe_button_justifyblock .cKe_icon
+{
+	background-position: 0 -512px;
+}
+
+.cKe_skin_v2 .cKe_button_blockquote .cKe_icon
+{
+	background-position: 0 -1152px;
+}
+
+.cKe_skin_v2 .cKe_button_flash .cKe_icon
+{
+	background-position: 0 -592px;
+}
+
+.cKe_skin_v2 .cKe_button_pastefromword .cKe_icon
+{
+	background-position: 0 -160px;
+}
+
+.cKe_skin_v2 .cKe_button_save .cKe_icon
+{
+	background-position: 0 -32px;
+}
+
+.cKe_skin_v2 .cKe_button_about .cKe_icon
+{
+	background-position: 0 -736px;
+}
+
+.cKe_skin_v2 .cKe_button_maximize .cKe_icon
+{
+	background-position: 0 -1040px;
+}
+
+.cKe_skin_v2 .cKe_button_creatediv .cKe_icon
+{
+	background-position: 0 -1168px;
+}
+
+.cKe_skin_v2 .cKe_button_editdiv .cKe_icon
+{
+	background-position: 0 -1184px;
+}
+
+.cKe_skin_v2 .cKe_button_removediv .cKe_icon
+{
+	background-position: 0 -1200px;
+}
+.cKe_skin_v2 .cKe_button_bidirtl .cKe_icon
+{
+	background-position: 0 -1072px;
+}
+
+.cKe_skin_v2 .cKe_button_bidiltr .cKe_icon
+{
+	background-position: 0 -1056px;
+}
+
+.cKe_skin_v2 .cKe_button_iframe .cKe_icon
+{
+	background-position: 0 -1279px;
+}

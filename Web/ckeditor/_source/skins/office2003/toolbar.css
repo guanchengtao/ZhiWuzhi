@@ -1,0 +1,522 @@
+/*
+Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://cKeditor.com/license
+*/
+
+@media print
+{
+	.cKe_skin_office2003 .cKe_toolbox
+	{
+		display: none;
+	}
+}
+
+.cKe_skin_office2003 .cKe_browser_webkit .cKe_toolbox,
+.cKe_skin_office2003 .cKe_browser_webkit .cKe_toolbox > span
+{
+	white-space: normal;
+}
+
+.cKe_skin_office2003 .cKe_toolbox
+{
+	clear: both;
+	/* Define the padding-bottom otherwise the collapser button will not be clickable #4932*/
+	padding-bottom: 1px;
+}
+
+.cKe_skin_office2003 a.cKe_toolbox_collapser,
+.cKe_skin_office2003 a:hover.cKe_toolbox_collapser
+{
+	background-image: url(images/sprites.png);
+	_background-image: url(images/sprites_ie6.png);
+	background-position: 3px -1026px; /* +3px +4px */
+	background-repeat: no-repeat;
+	width: 11px;
+	height: 11px;
+	float: right;
+	border: outset 1px;
+	margin: 11px 2px 2px;
+	cursor: pointer;
+}
+
+.cKe_skin_office2003 .cKe_rtl a.cKe_toolbox_collapser,
+.cKe_skin_office2003 .cKe_rtl a:hover.cKe_toolbox_collapser
+{
+	float: left;
+}
+
+.cKe_skin_office2003 a.cKe_toolbox_collapser span
+{
+	display: none;
+}
+
+.cKe_skin_office2003 .cKe_hc a.cKe_toolbox_collapser span
+{
+	font-size: 10px;
+	font-weight: bold;
+	font-family: Arial;
+	display: inline;
+}
+
+.cKe_skin_office2003 a.cKe_toolbox_collapser_min,
+.cKe_skin_office2003 a:hover.cKe_toolbox_collapser_min
+{
+	/* arrowleft.gif*/
+	background-image: url(images/sprites.png);
+	_background-image: url(images/sprites_ie6.png);
+	background-position: 4px -1047px; /* +4px +3px */
+	background-repeat: no-repeat;
+	margin: 2px;
+}
+
+.cKe_skin_office2003 .cKe_rtl a.cKe_toolbox_collapser_min,
+.cKe_skin_office2003 .cKe_rtl a:hover.cKe_toolbox_collapser_min
+{
+	/* arrowright.gif*/
+	background-position: 4px -1068px; /* +2px +3px */
+}
+
+.cKe_skin_office2003 .cKe_toolbar
+{
+	background-color: #d6dff7;
+	background-image: url(images/sprites.png);
+	_background-image: url(images/sprites_ie6.png);
+	background-position: 0 -962px;
+	background-repeat: repeat-x;
+	display: inline-block;
+	float: left;
+	!height: 28px;
+	!line-height: 28px;
+}
+
+.cKe_skin_office2003 .cKe_rtl .cKe_toolbar
+{
+	float: right;
+}
+
+.cKe_skin_office2003 .cKe_toolgroup
+{
+	display: inline-block;
+	float: left;
+	height: 28px;
+}
+
+.cKe_skin_office2003 .cKe_browser_ie .cKe_toolgroup
+{
+	#float: none;
+	#display: inline;
+}
+
+.cKe_skin_office2003 .cKe_rtl .cKe_toolgroup
+{
+	float: right;
+}
+
+.cKe_skin_office2003 .cKe_browser_ie .cKe_rtl .cKe_toolgroup
+{
+	#float: none;
+}
+
+.cKe_skin_office2003 .cKe_separator
+{
+	display: inline-block;
+	float: left;
+	border-left: solid 1px #B2CBFF;
+	margin: 6px 2px;
+	height: 16px;
+}
+
+.cKe_skin_office2003 .cKe_browser_ie .cKe_separator
+{
+	#float: none;
+	#display: inline;
+}
+
+.cKe_skin_office2003 .cKe_rtl .cKe_separator
+{
+	float: right;
+}
+
+.cKe_skin_office2003 .cKe_browser_ie .cKe_rtl .cKe_separator
+{
+	#float: none;
+}
+
+.cKe_skin_office2003 .cKe_break
+{
+	clear: left;
+}
+
+.cKe_skin_office2003 .cKe_rtl .cKe_break
+{
+	clear: right;
+}
+
+.cKe_skin_office2003 .cKe_toolbar_start
+{
+	display: inline-block;
+	background-image: url(images/sprites.png);
+	_background-image: url(images/sprites_ie6.png);
+	background-repeat: no-repeat;
+	background-position: -27px -765px;
+	width: 10px;
+	height: 28px;
+	float: left;
+}
+
+.cKe_skin_office2003 .cKe_browser_ie .cKe_toolbar_start
+{
+	#float: none;
+	#display: inline;
+}
+
+.cKe_skin_office2003 .cKe_rtl .cKe_toolbar_start
+{
+    background-position: -27px -816px;
+    float: right;
+}
+
+.cKe_skin_office2003 .cKe_browser_ie .cKe_rtl .cKe_toolbar_start
+{
+	#float: none;
+}
+
+.cKe_skin_office2003 .cKe_toolbar_end
+{
+	display: inline-block;
+	background-image: url(images/sprites.png);
+	_background-image: url(images/sprites_ie6.png);
+	background-repeat: no-repeat;
+	background-position: -29px -861px;
+	width: 4px;
+	height: 28px;
+	float: left;
+}
+
+.cKe_skin_office2003 .cKe_browser_ie .cKe_toolbar_end
+{
+	#float: none;
+	#display: inline;
+}
+
+.cKe_skin_office2003 .cKe_rtl .cKe_toolbar_end
+{
+    background-position: -29px -907px;
+    float: right;
+}
+
+.cKe_skin_office2003 .cKe_browser_ie .cKe_rtl .cKe_toolbar_end
+{
+	#float: none;
+}
+
+/*#7181*/
+.cKe_skin_office2003 .cKe_browser_ie9 .cKe_rtl .cKe_separator,
+.cKe_skin_office2003 .cKe_browser_ie9 .cKe_rtl .cKe_toolbar_start,
+.cKe_skin_office2003 .cKe_browser_ie9 .cKe_rtl .cKe_toolbar_end
+{
+	vertical-align:middle;
+}
+
+.cKe_skin_office2003 .cKe_button a,
+.cKe_skin_office2003 .cKe_button a:hover,
+.cKe_skin_office2003 .cKe_button a:focus,
+.cKe_skin_office2003 .cKe_button a:active,
+.cKe_skin_office2003 .cKe_button a.cKe_off
+{
+	border: solid 1px transparent;
+	border-radius: 3px;
+	outline: none;
+	padding-top: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-bottom: 2px;
+	margin-top: 2px;
+	height: 18px;
+	vertical-align: top;
+
+	_border: none;
+	_margin: 3px 1px 1px 1px;
+	cursor: default;
+	display: inline-block;
+}
+
+.cKe_skin_office2003 .cKe_button a,
+.cKe_skin_office2003 .cKe_button a.cKe_off
+{
+	filter: alpha(opacity=70); /* IE */
+	opacity: 0.70; /* Safari, Opera and Mozilla */
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.cKe_skin_office2003 .cKe_hc .cKe_button a,
+.cKe_skin_office2003 .cKe_hc .cKe_button a.cKe_off
+{
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+	_border: 1px solid transparent;
+}
+
+.cKe_skin_office2003 .cKe_button a.cKe_on
+{
+	border: solid 1px #316ac5;
+	background-color: #c1d2ee;
+	filter: alpha(opacity=100); /* IE */
+	opacity: 1; /* Safari, Opera and Mozilla */
+
+	_margin: 2px 0 0 0;
+}
+
+.cKe_skin_office2003 .cKe_hc .cKe_button a:hover,
+.cKe_skin_office2003 .cKe_hc .cKe_button a:focus,
+.cKe_skin_office2003 .cKe_hc .cKe_button a:active	/* IE */
+{
+	padding: 0 2px !important;
+	border-width: 3px;
+}
+
+.cKe_skin_office2003 .cKe_button a.cKe_disabled *
+{
+	filter: alpha(opacity=30); /* IE */
+	opacity: 0.3; /* Safari, Opera and Mozilla */
+}
+
+/* IE with zoom != 100% will distort the icons otherwise #4821 */
+.cKe_skin_office2003 .cKe_browser_ie .cKe_button a.cKe_disabled *,
+.cKe_skin_office2003 .cKe_browser_ie a:hover.cKe_button .cKe_disabled *
+{
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale'), alpha(opacity=30);
+}
+.cKe_skin_office2003 .cKe_browser_ie .cKe_rtl .cKe_button a.cKe_disabled *,
+.cKe_skin_office2003 .cKe_browser_ie .cKe_rtl a:hover.cKe_button .cKe_disabled *
+{
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale'), alpha(opacity=30);
+}
+.cKe_skin_office2003 .cKe_browser_ie6 .cKe_button a.cKe_disabled *,
+.cKe_skin_office2003 .cKe_browser_ie6 a:hover.cKe_button .cKe_disabled *,
+.cKe_skin_office2003 .cKe_browser_ie .cKe_button.cKe_noalphafix a.cKe_disabled *
+{
+	filter: alpha(opacity=30);
+}
+
+.cKe_skin_office2003 .cKe_hc .cKe_button a.cKe_disabled *,
+.cKe_skin_office2003 .cKe_browser_ie.cKe_hc a:hover.cKe_button .cKe_disabled *
+{
+	filter: alpha(opacity=60);
+	opacity: 0.6;
+}
+
+.cKe_skin_office2003 .cKe_button a:hover,
+.cKe_skin_office2003 .cKe_button a:focus,
+.cKe_skin_office2003 .cKe_button a:active	/* IE */
+{
+	border: solid 1px #316ac5;
+	background-color: #dff1ff;
+	filter: alpha(opacity=100); /* IE */
+	opacity: 1; /* Safari, Opera and Mozilla */
+	vertical-align: top;
+
+	_margin: 2px 0 0 0;
+	padding: 2px 4px;
+}
+
+.cKe_skin_office2003 .cKe_button .cKe_icon
+{
+	background-image: url(icons.png);
+	background-position: 100px;
+	background-repeat:no-repeat;
+	margin-top:1px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	cursor: default;
+}
+
+.cKe_skin_office2003 .cKe_rtl .cKe_button .cKe_icon
+{
+	background-image: url(icons_rtl.png);
+}
+
+/* IE with zoom != 100% will distort the icons otherwise #4821 */
+.cKe_skin_office2003 .cKe_browser_ie .cKe_button .cKe_icon
+{
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale');
+}
+.cKe_skin_office2003 .cKe_browser_ie .cKe_rtl .cKe_button .cKe_icon
+{
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale');
+}
+.cKe_skin_office2003 .cKe_browser_ie6 .cKe_button .cKe_icon,
+.cKe_skin_office2003 .cKe_browser_ie6 .cKe_rtl .cKe_button .cKe_icon,
+.cKe_skin_office2003 .cKe_browser_ie .cKe_button.cKe_noalphafix .cKe_icon,
+.cKe_skin_office2003 .cKe_browser_ie .cKe_rtl .cKe_button.cKe_noalphafix .cKe_icon
+{
+	filter: ;
+}
+
+.cKe_skin_office2003 .cKe_button .cKe_label
+{
+	display: none;
+	padding-left: 3px;
+	cursor: default;
+	vertical-align:middle;
+	_background-image: url(images/sprites_ie6.png);
+	_background-position: 0 -970px;
+	_background-repeat: repeat-x;
+}
+
+.cKe_skin_office2003 .cKe_button a:hover .cKe_label
+{
+	_background-color: #dff1ff;
+	_background-image: none;
+}
+
+.cKe_skin_office2003 .cKe_button a.cKe_on .cKe_label
+{
+	_background-color: #c1d2ee;
+	_background-image: none;
+}
+
+.cKe_skin_office2003 .cKe_hc .cKe_button .cKe_label
+{
+	padding: 0;
+	display: inline-block;
+}
+
+.cKe_skin_office2003 .cKe_hc .cKe_button .cKe_icon
+{
+	display: none;
+}
+
+.cKe_skin_office2003 .cKe_accessibility
+{
+	position: absolute;
+	display: block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+.cKe_skin_office2003 .cKe_button .cKe_buttonarrow
+{
+	display: inline-block;
+	height: 18px;
+	width: 8px;
+	background-position: 2px -1004px;
+	background-image: url(images/sprites.png);
+	_background-image: url(images/sprites_ie6.png);
+	background-repeat: no-repeat;
+	cursor: default;
+}
+
+/* IE with zoom != 100% will distort the icons otherwise #4821 */
+.cKe_skin_office2003 .cKe_browser_ie .cKe_button .cKe_buttonarrow
+{
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale');
+}
+.cKe_skin_office2003 .cKe_browser_ie6 .cKe_button .cKe_buttonarrow
+{
+	filter: ;
+}
+
+.cKe_skin_office2003 .cKe_rtl .cKe_button .cKe_buttonarrow
+{
+	background-position: 0 -1004px;
+}
+
+/*** Firefox 2 ***/
+
+.cKe_skin_office2003 .cKe_browser_gecko18 .cKe_toolbar,
+.cKe_skin_office2003 .cKe_browser_gecko18 .cKe_button a,
+.cKe_skin_office2003 .cKe_browser_gecko18 .cKe_button a.cKe_off,
+.cKe_skin_office2003 .cKe_browser_gecko18 .cKe_button .cKe_icon,
+.cKe_skin_office2003 .cKe_browser_gecko18 .cKe_button .cKe_buttonarrow,
+.cKe_skin_office2003 .cKe_browser_gecko18 .cKe_separator,
+.cKe_skin_office2003 .cKe_browser_gecko18 .cKe_toolbar_start,
+.cKe_skin_office2003 .cKe_browser_gecko18 .cKe_toolbar_end
+{
+	display: block;
+	float: left;
+}
+
+.cKe_skin_office2003 .cKe_browser_gecko18 .cKe_hc .cKe_button .cKe_icon
+{
+	display: none;
+}
+
+.cKe_skin_office2003 .cKe_browser_gecko18 .cKe_rtl .cKe_toolbar,
+.cKe_skin_office2003 .cKe_browser_gecko18 .cKe_rtl .cKe_button a,
+.cKe_skin_office2003 .cKe_browser_gecko18 .cKe_rtl .cKe_button a.cKe_off,
+.cKe_skin_office2003 .cKe_browser_gecko18 .cKe_rtl .cKe_button .cKe_icon,
+.cKe_skin_office2003 .cKe_browser_gecko18 .cKe_rtl .cKe_button .cKe_buttonarrow,
+.cKe_skin_office2003 .cKe_browser_gecko18 .cKe_rtl .cKe_separator,
+.cKe_skin_office2003 .cKe_browser_gecko18 .cKe_rtl .cKe_toolbar_start,
+.cKe_skin_office2003 .cKe_browser_gecko18 .cKe_rtl .cKe_toolbar_end
+{
+	float: right;
+}
+
+.cKe_skin_office2003 .cKe_browser_gecko18 .cKe_button .cKe_label,
+.cKe_skin_office2003 .cKe_browser_gecko18 .cKe_break
+{
+	float: left;
+}
+
+.cKe_skin_office2003 .cKe_browser_gecko18 .cKe_rtl span.cKe_inline_label
+{
+	float: right;
+}
+
+.cKe_skin_office2003 .cKe_browser_gecko18 .cKe_rtl .cKe_button .cKe_label,
+.cKe_skin_office2003 .cKe_browser_gecko18 .cKe_rtl .cKe_break
+{
+	float: right;
+}
+
+.cKe_skin_office2003 .cKe_browser_gecko18 .cKe_separator
+{
+	margin-top: 4px;
+}
+
+.cKe_skin_office2003 .cKe_browser_gecko18 .cKe_button .cKe_label
+{
+	padding-top: 3px;
+}
+
+/*** IE6 ***/
+
+.cKe_skin_office2003 .cKe_browser_ie .cKe_rtl .cKe_toolgroup,
+.cKe_skin_office2003 .cKe_browser_ie .cKe_rtl .cKe_separator,
+.cKe_skin_office2003 .cKe_browser_ie .cKe_rtl .cKe_toolbar_start,
+.cKe_skin_office2003 .cKe_browser_ie .cKe_rtl .cKe_toolbar_end
+{
+	float: none;
+}
+
+/*** IE8 ***/
+
+.cKe_skin_office2003 .cKe_browser_ie8 .cKe_toolbar,
+.cKe_skin_office2003 .cKe_browser_ie8 .cKe_toolgroup
+{
+	vertical-align: top;
+}
+
+.cKe_skin_office2003 .cKe_browser_iequirks.cKe_browser_ie8 .cKe_toolbar,
+.cKe_skin_office2003 .cKe_browser_iequirks.cKe_browser_ie8 .cKe_toolgroup
+{
+	/* revert previous */
+	vertical-align: baseline;
+}
+
+/* Separator + Combo penetrate toolbar in IE quirks. (#4461) */
+.cKe_skin_office2003 .cKe_browser_iequirks .cKe_separator
+{
+	vertical-align: text-bottom;
+}
+/* Fix cursor shape consistency on toolbar combos (#4031) */
+.cKe_skin_office2003 .cKe_browser_ie .cKe_rcombo,
+.cKe_skin_office2003 .cKe_browser_ie .cKe_rcombo *
+{
+	cursor: default;
+}

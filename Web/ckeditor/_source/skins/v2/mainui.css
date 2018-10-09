@@ -1,0 +1,162 @@
+/*
+Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://cKeditor.com/license
+*/
+
+.cKe_skin_v2 .cKe_editor
+{
+	display: inline-table;
+	width: 100%;
+}
+.cKe_skin_v2 .cKe_browser_webkit .cKe_editor
+{
+	display: table;	/* #6684 */
+}
+
+.cKe_skin_v2
+{
+	display: block;
+}
+
+.cKe_skin_v2 span.cKe_browser_webkit,
+.cKe_skin_v2 span.cKe_browser_gecko18
+{
+	display: block;
+}
+
+.cKe_skin_v2 .cKe_wrapper
+{
+	display: block;
+}
+
+.cKe_skin_v2 .cKe_browser_opera .cKe_editor
+{
+	display: table;
+}
+
+.cKe_skin_v2 .cKe_top,
+.cKe_skin_v2 .cKe_bottom,
+ .cKe_shared .cKe_skin_v2
+{
+	background-color: #efefde;
+}
+
+.cKe_skin_v2 .cKe_top
+{
+    border-top: solid 1px #fafaf5;
+    border-left: solid 1px #fafaf5;
+    border-right: solid 1px #696969;
+    border-bottom: solid 2px #696969;
+}
+
+.cKe_skin_v2 .cKe_rtl .cKe_top
+{
+    border-left: solid 1px #696969;
+    border-right: solid 1px #fafaf5;
+}
+
+.cKe_skin_v2 .cKe_bottom
+{
+    border-left: solid 1px #696969;
+    border-right: solid 1px #696969;
+    border-bottom: solid 1px #696969;
+}
+
+.cKe_skin_v2 .cKe_contents
+{
+	border: solid 1px #696969;
+	/* Prevent background content from penetrate through when switching between editing modes. (#4918) */
+	background-color: white;
+}
+
+.cKe_skin_v2 .cKe_focus
+{
+	outline: auto 5px -webkit-focus-ring-color;
+}
+
+.cKe_skin_v2 textarea.cKe_source
+{
+	font-family: 'Courier New' , Monospace;
+	font-size: small;
+	background-color: #fff;
+	white-space: pre;
+}
+
+.cKe_skin_v2 .cKe_browser_iequirks textarea.cKe_source
+{
+	/* For IE6+Quirks only */
+	_white-space: normal;
+}
+
+.cKe_skin_v2 .cKe_resizer
+{
+	width: 12px;
+	height: 12px;
+	margin-top: 16px;
+	display: block;
+	float: right;
+	/* resizer.gif*/
+	background-image: url(images/sprites.png);
+	_background-image: url(images/sprites_ie6.png);
+	background-position: 0 -801px;
+	background-repeat: no-repeat;
+	cursor: se-resize;
+}
+
+/* Adobe AIR doesn't support *-resize cursor shape. */
+.cKe_skin_v2 .cKe_browser_air .cKe_resizer,
+.cKe_skin_v2 .cKe_browser_air .cKe_rtl .cKe_resizer
+{
+	cursor: move;
+}
+
+.cKe_skin_v2 .cKe_resizer_rtl
+{
+	cursor: sw-resize;
+	/* resizer_rtl.gif*/
+	background-position: 0 -828px;
+	float: left;
+}
+
+.cKe_skin_v2 .cKe_resizer_horizontal,
+.cKe_skin_v2 .cKe_rtl .cKe_resizer_horizontal
+{
+	cursor: e-resize;
+}
+
+.cKe_skin_v2 .cKe_resizer_vertical,
+.cKe_skin_v2 .cKe_rtl .cKe_resizer_vertical
+{
+	cursor: n-resize;
+}
+
+.cKe_skin_v2 .cKe_maximized .cKe_resizer
+{
+	display: none;
+}
+
+.cKe_skin_v2 .cKe_browser_ie6 .cKe_contents textarea,
+.cKe_skin_v2 .cKe_browser_ie7 .cKe_contents textarea
+{
+	position: absolute;
+}
+
+/* All voice labels are not displayed. */
+.cKe_skin_v2 .cKe_voice_label
+{
+	display: none;
+}
+
+.cKe_skin_v2 legend.cKe_voice_label
+{
+	display: none;
+}
+
+.cKe_skin_v2 .cKe_browser_ie legend.cKe_voice_label
+{
+	position: absolute;
+	display: block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}

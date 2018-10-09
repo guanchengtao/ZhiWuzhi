@@ -1,0 +1,11 @@
+D:\SDAU_ZhiWuZhi\CodematicDemo\DBUtility\bin\Debug\SDAU.DBUtility.dll
+D:\SDAU_ZhiWuZhi\CodematicDemo\DBUtility\bin\Debug\SDAU.DBUtility.pdb
+D:\SDAU_ZhiWuZhi\CodematicDemo\DBUtility\bin\Debug\IBatisNet.Common.dll
+D:\SDAU_ZhiWuZhi\CodematicDemo\DBUtility\bin\Debug\IBatisNet.DataMapper.dll
+D:\SDAU_ZhiWuZhi\CodematicDemo\DBUtility\bin\Debug\MySql.Data.dll
+D:\SDAU_ZhiWuZhi\CodematicDemo\DBUtility\bin\Debug\System.Data.SQLite.DLL
+D:\SDAU_ZhiWuZhi\CodematicDemo\DBUtility\obj\Debug\SDAU.ZWZ.DBUtility.csproj.CoreCompileInputs.cache
+D:\SDAU_ZhiWuZhi\CodematicDemo\DBUtility\obj\Debug\SDAU.DBUtility.dll
+D:\SDAU_ZhiWuZhi\CodematicDemo\DBUtility\obj\Debug\SDAU.DBUtility.pdb
+D:\SDAU_ZhiWuZhi\CodematicDemo\DBUtility\obj\Debug\SDAU.ZWZ.DBUtility.csprojAssemblyReference.cache
+D:\SDAU_ZhiWuZhi\CodematicDemo\DBUtility\obj\Debug\SDAU.ZWZ.DBUtility.csproj.CopyComplete

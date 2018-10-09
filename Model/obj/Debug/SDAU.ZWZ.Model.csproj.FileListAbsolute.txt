@@ -1,0 +1,6 @@
+D:\SDAU_ZhiWuZhi\CodematicDemo\Model\bin\Debug\SDAU.Model.dll
+D:\SDAU_ZhiWuZhi\CodematicDemo\Model\bin\Debug\SDAU.Model.pdb
+D:\SDAU_ZhiWuZhi\CodematicDemo\Model\obj\Debug\SDAU.ZWZ.Model.csproj.CoreCompileInputs.cache
+D:\SDAU_ZhiWuZhi\CodematicDemo\Model\obj\Debug\SDAU.Model.dll
+D:\SDAU_ZhiWuZhi\CodematicDemo\Model\obj\Debug\SDAU.Model.pdb
+D:\SDAU_ZhiWuZhi\CodematicDemo\Model\obj\Debug\SDAU.ZWZ.Model.csprojAssemblyReference.cache

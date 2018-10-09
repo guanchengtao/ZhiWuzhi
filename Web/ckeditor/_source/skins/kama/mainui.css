@@ -1,0 +1,203 @@
+/*
+Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://cKeditor.com/license
+*/
+
+.cKe_skin_kama
+{
+	display: block;
+}
+
+/* Main editor only settings. */
+span.cKe_skin_kama
+{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #D3D3D3;
+	padding: 5px;
+}
+
+.cKe_skin_kama span.cKe_browser_webkit,
+.cKe_skin_kama span.cKe_browser_gecko18
+{
+	display: block;
+}
+
+.cKe_skin_kama .cKe_wrapper
+{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #d3d3d3;
+	background-image: url(images/sprites.png);
+	background-repeat: repeat-x;
+	background-position: 0 -1950px;
+	display: block;
+	/* IE Quirks: editor chrome overflow horizontally without an explicit width. */
+	_display: inline-block;
+	padding: 5px;
+
+	/*background-color: Red;*/
+}
+
+.cKe_shared .cKe_skin_kama .cKe_wrapper
+{
+	padding-bottom: 0;
+}
+
+.cKe_skin_kama .cKe_browser_ie6 .cKe_wrapper,
+.cKe_skin_kama .cKe_browser_iequirks .cKe_wrapper
+{
+	background-image: none;
+}
+
+.cKe_skin_kama .cKe_editor
+{
+	display: inline-table;
+	width: 100%;
+}
+.cKe_skin_kama .cKe_browser_webkit .cKe_editor
+{
+	display: table;	/* #6684 */
+}
+
+.cKe_skin_kama .ltr .cKe_browser_ie iframe
+{
+	margin-right: -10px;
+}
+
+.cKe_skin_kama .rtl .cKe_browser_ie iframe
+{
+	margin-left: -10px;
+}
+
+.cKe_skin_kama .cKe_browser_opera .cKe_editor.cKe_skin_kama .cKe_resizer
+{
+	display: table;
+}
+
+.cKe_skin_kama .cKe_contents
+{
+	margin: 5px;
+}
+
+.cKe_skin_kama .cKe_hc .cKe_contents
+{
+	border: 1px solid black;
+}
+
+.cKe_skin_kama .cKe_contents iframe
+{
+	background-color: #fff;
+}
+
+.cKe_skin_kama .cKe_focus
+{
+	outline: auto 5px -webkit-focus-ring-color;
+}
+
+.cKe_skin_kama textarea.cKe_source
+{
+	font-family: 'Courier New' , Monospace;
+	font-size: small;
+	background-color: #fff;
+	white-space: pre;
+}
+
+.cKe_skin_kama .cKe_browser_iequirks textarea.cKe_source
+{
+	/* For IE6+Quirks only */
+	_white-space: normal;
+}
+
+.cKe_skin_kama .cKe_resizer
+{
+	width: 12px;
+	height: 12px;
+	margin-top: 9px;
+	display: block;
+	float: right;
+	/* resizer.gif*/
+	background-image: url(images/sprites.png);
+	_background-image: url(images/sprites_ie6.png);
+	background-position: 0 -1428px;
+	background-repeat: no-repeat;
+	cursor: se-resize;
+}
+
+/* Adobe AIR doesn't support *-resize cursor shape. */
+.cKe_skin_kama .cKe_browser_air .cKe_resizer,
+.cKe_skin_kama .cKe_browser_air .cKe_rtl .cKe_resizer
+{
+	cursor: move;
+}
+
+.cKe_skin_kama .cKe_resizer_rtl
+{
+	cursor: sw-resize;
+	/* resizer_rtl.gif*/
+	background-position: 0 -1455px;
+	float: left;
+}
+
+.cKe_skin_kama .cKe_resizer_horizontal,
+.cKe_skin_kama .cKe_rtl .cKe_resizer_horizontal
+{
+	cursor: e-resize;
+}
+
+.cKe_skin_kama .cKe_resizer_vertical,
+.cKe_skin_kama .cKe_rtl .cKe_resizer_vertical
+{
+	cursor: n-resize;
+}
+
+.cKe_skin_kama .cKe_maximized .cKe_resizer
+{
+	display: none;
+}
+
+.cKe_skin_kama .cKe_browser_ie6 .cKe_contents textarea,
+.cKe_skin_kama .cKe_browser_ie7 .cKe_contents textarea
+{
+	position: absolute;
+}
+
+.cKe_skin_kama .cKe_browser_ie.cKe_browser_quirks .cKe_contents iframe
+{
+	position: absolute;
+	top: 0;
+}
+
+.cKe_skin_kama .cKe_browser_ie6 .cKe_editor,
+.cKe_skin_kama .cKe_browser_ie7 .cKe_editor
+{
+	display: inline-block;
+}
+
+.cKe_skin_kama .cKe_browser_ie6 .cKe_editor,
+.cKe_shared .cKe_skin_kama .cKe_browser_ie7 .cKe_wrapper
+{
+	padding-bottom: 5px;
+}
+
+/* All voice labels are not displayed. */
+.cKe_skin_kama .cKe_voice_label
+{
+	display: none;
+}
+
+.cKe_skin_kama legend.cKe_voice_label
+{
+	display: none;
+}
+
+.cKe_skin_kama .cKe_browser_ie legend.cKe_voice_label
+{
+	position: absolute;
+	display: block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}

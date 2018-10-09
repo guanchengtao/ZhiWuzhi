@@ -1,0 +1,231 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>山东农业大学校园植物志</title>
+        <link rel="icon" href="../Images/image/logo.ico" type="image/x-icon"/>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery-1.11.1.min.js"></script>
+ <script src="js/responsiveslides.min.js"></script>
+    <script>
+    $(function () {
+      $("#slider").responsiveSlides({
+      	auto: true,
+      	nav: true,
+      	speed: 500,
+        namespace: "callbacks",
+        pager: true,
+      });
+        });
+        $(function () {
+            var pid = window.location.href.split("=")[1];
+            if (typeof (pid) == "undefined") {
+                window.location.href = "error.html";
+            }
+            $.getJSON("../Administor/ashx/LoadPl.ashx", { id: pid }, function (data) {
+                if (data == "error") {
+                    window.location.href = "error.html";
+                }
+                else {
+                    $(".containers h3").text(data.itd.ZWXueMing);
+                    var i = 0;
+                    if (data.pic2)
+                        while (i < data.pic2.length) {
+                            $(".containers").find("img:eq(" + i + ")").attr("src", data.pic2[i].DiZhi);
+                            i++;
+                        }
+                    $(".containers h4").text(data.itd.Xiaoqu + ":" + data.itd.WeiZhi);
+                    $(".containers").find('p:first').html(data.itd.FBQuYu);
+                }        
+            })
+            //加载其他植物
+            $.getJSON("../Administor/ashx/zhiwulist.ashx", {}, function (data) {
+                var data = data.list1;
+                var i = 0;
+                var j = 1;
+                while (i < 5) {
+                        $("#p" + j + " h4").text(data[i].ZWXueMing);
+                        $("#p" + j + " img").attr("src", data[i].Mu).css("height", "180px");
+                        $("#p" + j + " p").html(data[i].FBQuYu.substring(-1, 50));
+                        $("#p" + j + " a").attr("href", "about.html?id=" + data[i].ZWBianHao);
+                        j++; i++;
+                    
+                  
+                }
+            });
+        });
+        //加载评论
+        $(function () {
+            var pid = window.location.href.split("=")[1];
+            LoadComment();
+            //发布评论
+            $("#submit").click(function () {
+                var msg = $("#comment").val();
+                var name = $("#name").val();
+                if (msg != "") {
+                    $.post("../Administor/ashx/AddComment.ashx", { action: "add", msg: msg, id: pid, name: name }, function (data) {
+                        if (data == "ok") {
+                            //  window.location.reload();
+                            window.location.href = "about.html?id=" + pid;
+                        }
+                        else {
+                            alert("评论失败！");
+                        }
+                    });
+                }
+                else {
+                    alert("评论不能为空！！");
+                }
+            });
+            function LoadComment() {
+                $("#comment").val("");
+                var pid1 = window.location.href.split("=")[1];
+                $.getJSON("../Administor/ashx/AddComment.ashx", { action: "load", id1: pid1 }, function (data) {
+                    var comment = data;
+                    for (var i = 0; i < comment.length; i++) {
+                        $("<li>[用户]&nbsp;&nbsp;" + comment[i].Name + "<br/> " + comment[i].PLShiJian + " 发表: " + comment[i].NeiRong + "</li><div style='height:1px;border:none;border-top:1px dashed #555555;width:700px;'><div>").appendTo("#showComment");
+                    }
+                });
+            };
+        });  
+    </script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+ <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+    <style>
+        a:hover{
+            color:antiquewhite
+        }
+        ul li{
+            list-style:none;
+        }
+    </style>
+</head>
+<body>
+   <div class="header" id="home">
+   	<div class="container">
+   		<div class="header-top">
+		<div class="logo">
+	<a href="index.html"><span style="font-size:75px;font-family:STXingkai">山东农业大学校园植物志</span></a>
+   			<p></p>
+   			</div>
+   		<div class='top-menu'>
+   				<label class="menu">  </label>
+   				<ul>
+   	<li><a href='index.html' class="active"><span>首页</span></a></li>
+  	<li><a href='zhiwubiaoben.html' ><span>植物标本</span></a></li>
+    <li><a  href='map.html'><span>植物分布</span></a></li>
+   	<li><a href='contactus.html'><span>联系我们</span></a></li>
+   	<li><a href="http://www.sdau.edu.cn" title="" target="_blank"><span>农大官网</span></a></li>
+    </ul>				
+		 <script>
+             $("label.menu").click(function () {
+                 $(".top-menu ul").slideToggle("slow", function () {
+                 });
+             });
+		 </script>
+	</div>
+</div>
+   </div>
+   	</div>
+<div class="about-section" style="width:80%;margin:auto">
+   		<div class="containers">
+               <!--植物名称-->
+   			<h3></h3>
+   			<div class="about-grids">
+   				<div class="col-md-4 about-grid">
+                       <!--植物图片-->
+   					<img src=""><hr /><img src="">	<hr />	<img src=""><hr /><img src="">
+   					</div>
+   					<div class="col-md-8 about-grid1">
+                           <!--副标题-->
+   						<h4></h4>
+   					<!--植物简介-->
+                           <p>
+   							</p>
+   						<p></p>
+   						<p>
+   					</p>
+                           <div ><h2 style="color:burlywood">相关评论：</h2> <ul id="showComment" style="margin-left:50px;margin-top:20px">
+                 
+   					    </ul></div>
+                          
+   					</div>
+   					<div class="clearfix"> </div>
+   				</div>
+   			</div>
+   		</div>
+   		<div class="team-section">
+   			<div class="container">
+   				<h3>其他植物</h3>
+   				<div class="team-grids" id="otherplants">
+   					<div class="col-md-3 team-grid" id="p1">
+   						<a class="Atao"><img src="">
+   						<h4></h4>
+   						<p></p></a>
+   					</div>
+   					<div class="col-md-3 team-grid" id="p2">
+                           <a class="Atao">	<img src="">
+   						<h4></h4>
+   						<p></p></a>
+   					</div>
+   					<div class="col-md-3 team-grid" id="p3">
+                           <a class="Atao"><img src="">
+   						<h4></h4>
+   						<p></p></a>
+   					</div>
+   					<div class="col-md-3 team-grid" id="p4">
+                           <a class="Atao"><img src="">
+   						<h4></h4>
+   						<p></p></a>	
+   					</div>
+   					<div class="clearfix"> </div>
+   				</div>
+   			</div>
+   			</div>
+
+
+		<div class="contact-section">
+			<div class="container">
+				<h3>评论区</h3>
+                 <span style="font-size:large;color:white;margin-left:20px">给自己起一个响亮的名字吧</span> 
+				<input type="text" name="name" value=""  style="background-color:yellowgreen;height:30px"  id="name" />
+				<div class="contact-grid" style="width:100%;">
+				<div class="col-md-12 contactgrid1">
+				<textarea style="background-color:yellowgreen;height:150px" placeholder="留下你的评论..." id="comment" ></textarea>
+				</div>
+                   
+
+				<div class="contactgrid2">
+				<input type="button" id="submit" value="发表">
+			   </div>
+			   <div class="clearfix"></div>
+				</div>
+      
+				</div>
+				</div>
+				<div class="footer-section" >
+				<div class="container">			
+					<div class="footer-bottom">
+									<p>   Copyright &copy; 2018.山东农业大学智慧农业重点实验室</p>
+									</div>
+									 <script type="text/javascript">
+                                         $(document).ready(function () {
+                                             $().UItoTop({ easingType: 'easeOutQuart' });
+                                         });
+					</script>
+				<a class="scroll" href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+								</div>
+							</div>
+	</body>
+</html>

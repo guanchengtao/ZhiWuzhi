@@ -1,0 +1,12 @@
+C:\Users\Lenovo\Desktop\SDAU_ZhiWuZhi\CodematicDemo\Model\bin\Debug\SDAU.Model.dll
+C:\Users\Lenovo\Desktop\SDAU_ZhiWuZhi\CodematicDemo\Model\bin\Debug\SDAU.Model.pdb
+C:\Users\Lenovo\Desktop\SDAU_ZhiWuZhi\CodematicDemo\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\SDAU_ZhiWuZhi\CodematicDemo\Model\obj\Debug\SDAU.Model.dll
+C:\Users\Lenovo\Desktop\SDAU_ZhiWuZhi\CodematicDemo\Model\obj\Debug\SDAU.Model.pdb
+C:\Users\Lenovo\Desktop\SDAU_ZhiWuZhi\CodematicDemo\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\SDAU_ZhiWuZhi\CodematicDemo\Model\bin\Debug\SDAU.Model.dll
+D:\SDAU_ZhiWuZhi\CodematicDemo\Model\bin\Debug\SDAU.Model.pdb
+D:\SDAU_ZhiWuZhi\CodematicDemo\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\SDAU_ZhiWuZhi\CodematicDemo\Model\obj\Debug\SDAU.Model.dll
+D:\SDAU_ZhiWuZhi\CodematicDemo\Model\obj\Debug\SDAU.Model.pdb
+D:\SDAU_ZhiWuZhi\CodematicDemo\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

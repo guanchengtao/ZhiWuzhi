@@ -1,0 +1,229 @@
+/*
+Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://cKeditor.com/license
+*/
+
+.cKe_skin_office2003 .cKe_contextmenu
+{
+	padding: 2px;
+}
+
+.cKe_skin_office2003 .cKe_menuitem a
+{
+	display:block;
+}
+
+.cKe_skin_office2003 .cKe_menuitem span
+{
+	cursor: default;
+}
+
+.cKe_skin_office2003 .cKe_menuitem a:hover,
+.cKe_skin_office2003 .cKe_menuitem a:focus,
+.cKe_skin_office2003 .cKe_menuitem a:active
+{
+	background-color: #8db1ff;
+	display:block;
+}
+
+.cKe_hc .cKe_menuitem a:hover,
+.cKe_hc .cKe_menuitem a:focus,
+.cKe_hc .cKe_menuitem a:active
+{
+	border: 2px solid;
+}
+
+.cKe_skin_office2003 .cKe_menuitem .cKe_icon
+{
+	background-image: url(icons.png);
+	background-position: 100px;
+	background-repeat:no-repeat;
+	background-color: transparent;
+	width: 16px;
+	height: 16px;
+	float: left;
+}
+
+.cKe_rtl .cKe_skin_office2003 .cKe_menuitem .cKe_icon
+{
+	background-image: url(icons_rtl.png);
+}
+
+/* IE with zoom != 100% will distort the icons otherwise #4821 */
+.cKe_browser_ie .cKe_skin_office2003 .cKe_menuitem .cKe_icon
+{
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale');
+}
+.cKe_browser_ie.cKe_rtl .cKe_skin_office2003 .cKe_menuitem .cKe_icon
+{
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale');
+}
+.cKe_browser_ie6 .cKe_skin_office2003 .cKe_menuitem .cKe_icon,
+.cKe_browser_ie .cKe_skin_office2003 .cKe_menuitem.cKe_noalphafix .cKe_icon
+{
+	filter: ;
+}
+
+.cKe_skin_office2003 .cKe_menuitem .cKe_disabled .cKe_icon
+{
+	filter: alpha(opacity=70); /* IE */
+	opacity: 0.70; /* Safari, Opera and Mozilla */
+}
+
+/* IE with zoom != 100% will distort the icons otherwise #4821 */
+.cKe_browser_ie .cKe_skin_office2003 .cKe_menuitem .cKe_disabled .cKe_icon
+{
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale');
+}
+.cKe_browser_ie.cKe_rtl .cKe_skin_office2003 .cKe_menuitem .cKe_disabled .cKe_icon
+{
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale');
+}
+.cKe_browser_ie6 .cKe_skin_office2003 .cKe_menuitem .cKe_disabled .cKe_icon,
+.cKe_browser_ie .cKe_skin_office2003 .cKe_menuitem.cKe_noalphafix .cKe_disabled .cKe_icon
+{
+	filter: ;
+}
+
+.cKe_skin_office2003 .cKe_menuitem .cKe_icon_wrapper
+{
+	background-color: #f7f8fd;
+	border: solid 4px #f7f8fd;
+	width: 16px;
+	height: 16px;
+	float: left;
+	filter: alpha(opacity=70); /* IE */
+	opacity: 0.70; /* Safari, Opera and Mozilla */
+	clear: both;
+}
+
+.cKe_rtl .cKe_skin_office2003 .cKe_menuitem .cKe_icon_wrapper
+{
+	float: right;
+}
+
+.cKe_skin_office2003 .cKe_menuitem a:hover .cKe_icon_wrapper,
+.cKe_skin_office2003 .cKe_menuitem a:focus .cKe_icon_wrapper,
+.cKe_skin_office2003 .cKe_menuitem a:active .cKe_icon_wrapper
+{
+	background-color: #9d9d9d;
+	border: solid 4px #9d9d9d;
+	filter: alpha(opacity=70); /* IE */
+	opacity: 0.70; /* Safari, Opera and Mozilla */
+}
+
+.cKe_skin_office2003 .cKe_menuitem a:hover.cKe_disabled .cKe_icon_wrapper,
+.cKe_skin_office2003 .cKe_menuitem a:focus.cKe_disabled .cKe_icon_wrapper,
+.cKe_skin_office2003 .cKe_menuitem a:active.cKe_disabled .cKe_icon_wrapper
+{
+	background-color: #f7f8fd;
+	border: solid 4px #f7f8fd;
+}
+
+.cKe_skin_office2003 .cKe_menuitem .cKe_label
+{
+	display:block;
+	padding-right: 3px;
+	padding-top: 5px;
+	padding-left: 4px;
+	height:19px;
+	margin-left: 24px;
+	background-color: #fff;
+}
+/* Set these after the document has been loaded and we know the dimensions*/
+.cKe_skin_office2003 .cKe_frameLoaded .cKe_menuitem .cKe_label
+{
+	filter: alpha(opacity=70); /* IE */
+	opacity: 0.70; /* Safari, Opera and Mozilla */
+}
+
+.cKe_rtl .cKe_skin_office2003 .cKe_menuitem .cKe_label
+{
+	padding-right: 0;
+	margin-left: 0;
+	padding-left: 3px;
+	margin-right: 28px;
+}
+
+.cKe_skin_office2003 .cKe_menuitem a.cKe_disabled .cKe_label
+{
+	filter: alpha(opacity=30); /* IE */
+	opacity: 0.30; /* Safari, Opera and Mozilla */
+}
+
+.cKe_skin_office2003 .cKe_menuitem a:hover .cKe_label,
+.cKe_skin_office2003 .cKe_menuitem a:focus .cKe_label,
+.cKe_skin_office2003 .cKe_menuitem a:active .cKe_label
+{
+	background-color: #8db1ff;
+}
+
+.cKe_skin_office2003 .cKe_menuitem a.cKe_disabled:hover .cKe_label,
+.cKe_skin_office2003 .cKe_menuitem a.cKe_disabled:focus .cKe_label,
+.cKe_skin_office2003 .cKe_menuitem a.cKe_disabled:active .cKe_label
+{
+	background-color: transparent;
+}
+
+.cKe_skin_office2003 .cKe_menuseparator
+{
+	background-color: #f7f8fd;
+	height: 2px;
+	filter: alpha(opacity=70); /* IE */
+	opacity: 0.70; /* Safari, Opera and Mozilla */
+
+	_font-size: 0;
+}
+
+.cKe_skin_office2003 .cKe_menuarrow
+{
+	/* arrowright.gif*/
+	background-image: url(images/sprites.png);
+	_background-image: url(images/sprites_ie6.png);
+	background-position: 0 -1071px;
+	background-repeat: no-repeat;
+	height: 5px;
+	width: 3px;
+	float: right;
+	margin-right: 2px;
+	margin-top: 3px;
+}
+
+.cKe_rtl .cKe_skin_office2003 .cKe_menuarrow
+{
+	float: left;
+	margin-right: 0;
+	margin-left: 2px;
+	/* arrowleft.gif*/
+	background-position: 0 -1050px;
+}
+
+.cKe_skin_office2003 .cKe_menuarrow span
+{
+	display: none;
+}
+
+.cKe_hc .cKe_skin_office2003 .cKe_menuarrow
+{
+	width: auto;
+	margin-top: 0;
+}
+
+.cKe_hc .cKe_skin_office2003 .cKe_menuarrow span
+{
+	display: inline;
+}
+
+/* #3766 In the context menu, long labels with second level menu get wrapped */
+.cKe_browser_ie.cKe_ltr .cKe_skin_office2003 .cKe_menuarrow
+{
+	position: absolute;
+	right: 2px;
+}
+
+.cKe_browser_ie.cKe_rtl .cKe_skin_office2003 .cKe_menuarrow
+{
+	position: absolute;
+	left: 2px;
+}
+/* END #3766 */

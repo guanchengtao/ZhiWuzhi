@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>ColorPicKer Examples</title>
+		<link rel="stylesheet" href="../themes/default/default.css" />
+		<script src="../kindeditor-min.js"></script>
+		<script>
+			KindEditor.ready(function(K) {
+				var colorpicKer;
+				K('#colorpicKer').bind('click', function(e) {
+					if (colorpicKer) {
+						colorpicKer.remove();
+						colorpicKer = null;
+					}
+					var colorpicKerPos = K('#colorpicKer').pos();
+					colorpicKer = K.colorpicKer({
+						x : colorpicKerPos.x,
+						y : colorpicKerPos.y + K('#colorpicKer').height(),
+						z : 19811214,
+						selectedColor : 'default',
+						noColor : '无颜色',
+						click : function(color) {
+							K('#color').val(color);
+							colorpicKer.remove();
+							colorpicKer = null;
+						}
+					});
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<input type="text" id="color" value="" /> <input type="button" id="colorpicKer" value="打开取色器" />
+	</body>
+</html>

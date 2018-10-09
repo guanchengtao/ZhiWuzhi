@@ -1,0 +1,49 @@
+/*
+Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://cKeditor.com/license
+*/
+
+/* "Source" button label */
+.cKe_skin_kama .cKe_button_source .cKe_label
+{
+	display: inline;
+}
+
+/* "Styles" panel size */
+.cKe_skin_kama .cKe_styles_panel
+{
+	width: 150px;
+	height: 170px;
+}
+
+/* "Format" panel size */
+.cKe_skin_kama .cKe_format_panel
+{
+	width: 150px;
+	height: 170px;
+}
+
+/* "Font" panel size */
+.cKe_skin_kama .cKe_font_panel
+{
+	width: 150px;
+	height: 170px;
+}
+
+/* "Font Size" panel size */
+.cKe_skin_kama .cKe_fontSize_panel
+{
+	height: 170px;
+}
+
+/* "Font Size" combo width */
+.cKe_skin_kama .cKe_fontSize .cKe_text
+{
+	width: 25px;
+}
+
+/* "Font Size" combo width (IE Quirks) */
+.cKe_skin_kama .cKe_browser_iequirks .cKe_fontSize .cKe_text
+{
+	width: 32px;
+}

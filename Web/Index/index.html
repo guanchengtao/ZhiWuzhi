@@ -1,0 +1,245 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>山东农业大学校园植物志</title>
+<link rel="icon" href="../Images/image/logo.ico" type="image/x-icon"/>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript">
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+    function hideURLbar()
+    { 
+    window.scrollTo(0,1);
+    }
+</script>
+<script src="js/jquery-1.11.1.min.js"></script>
+ <script src="js/responsiveslides.min.js"></script>
+    <script>
+    $(function () {
+      $("#slider").responsiveSlides({
+      	auto: true,
+      	nav: true,
+      	speed: 500,
+        namespace: "callbacks",
+        pager: true,
+      });
+        });
+        $(function () {
+            $.getJSON("../Administor/ashx/zhiwulist.ashx", {}, function (data) {
+                var data = data.list1;
+                var i = 0;
+                var j = 1;
+                while (i < 6) {
+                    $("#p" + j + " h4").text(data[i].ZWXueMing);
+                    $("#p" + j + " img").attr("src", data[i].Mu);
+                    $("#p" + j + " h5").text(data[i].Xiaoqu);
+                    $("#p" + j + " p").html(data[i].FBQuYu.substring(-1, 50));
+                    $("#p" + j + " a").attr("href", "about.html?id=" + data[i].ZWBianHao);
+                    j++; i++;
+                }            
+            })
+        })
+    </script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+ <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+<!---End-smoth-scrolling---->
+<link rel="stylesheet" href="css/swipebox.css">
+			<script src="js/jquery.swipebox.min.js"></script> 
+			    <script type="text/javascript">
+					jQuery(function($) {
+						$(".swipebox").swipebox();
+					});
+				</script>
+</head>
+<body>
+   <div class="header" id="home">
+   	<div class="container">
+   		<div class="header-top">
+		<div class="logo">
+   			<a href="index.html"><span style="font-size:75px;font-family:STXingkai">山东农业大学校园植物志</span></a>
+   			<p></p>
+   			</div>
+   		<div class='top-menu'>
+   				<label class="menu">  </label>
+   				<ul>
+   	<li><a href='index.html' class="active"><span>首页</span></a></li>
+  	<li><a href='zhiwubiaoben.html'><span>植物标本</span></a></li>
+    <li><a  href='map.html' target="_blank"><span>植物分布</span></a></li>
+   	<li><a href='contactus.html'><span>联系我们</span></a></li>
+   	<li><a href="http://www.sdau.edu.cn" title="" target="_blank"><span>农大官网</span></a></li>
+    <div class="clearfix"> </div>
+    </ul>				
+		 <script>
+		 $("label.menu").click(function(){
+		 $(".top-menu ul").slideToggle("slow" , function(){
+		 });
+		 });
+		 </script>
+	</div>
+</div>
+   </div>
+   	</div>
+   	<div class="header-slider">
+   		<div class="slider">
+	    <div class="callbacks_container">
+	      <ul class="rslides" id="slider">
+	        <li>
+                <img style="height:500px" src="../Images/image/2.jpg" alt="" />
+	          <div class="caption">
+	          	<h3></h3>
+	          </div>
+	        </li>
+	         <li>
+                 <img style="height:500px" src="../Images/image/3.jpg" />
+	          <div class="caption">
+	          		<h3></h3>
+	          	</div>
+	        </li>
+                 <li>
+           <img style="height:500px" src="../Images/image/1.jpg" />
+	          <div class="caption">
+	          		<h3></h3>
+	          	</div>
+	        </li>
+	        <li>
+           <img style="height:500px" src="../Images/image/5.jpg" />
+	          <div class="caption">
+	          		<h3></h3>
+	          	</div>
+	        </li>
+	      </ul>
+	  </div>
+	</div>
+</div>
+	<div class="content">
+		<div class="welcome">
+			<div class="container">
+				<div class="wel-grids">
+				<div class="col-md-4 wel-grid">
+                    <img src="../Images/1.jpg" class="img-responsive" alt="" />
+					</div>
+					<div class="col-md-8 wel-grid1">
+			<h3>您来了，欢迎！</h3>
+			<h6>这里是山东农业大学校园植物志</h6>
+			<h5></h5>
+			<p></p>
+				<a href="#" class="button">了解更多</a>
+		</div>
+		<div class="clearfix"> </div>
+		</div>
+		</div>
+	</div>
+	<div class="service-section">
+		<div class="container">
+			<h3>校园植物</h3>
+			<div class="service-grids">
+				    <div class="col-md-4 service-grid" id="p1">
+					<h4 ></h4>
+					<img style="height:180px;width:400px" src="" class="img-responsive" alt="" />
+					<h5></h5>
+					<p></p>
+					<a href="#" class="button1">了解更多</a>
+					</div>
+					<div class="col-md-4 service-grid" id="p2">
+					<h4></h4>
+					<img style="height:180px;width:400px" src="" class="img-responsive" alt="" />
+					<h5></h5>
+					<p></p>
+					<a href="#" class="button1"> 了解更多</a>
+					</div>
+					<div class="col-md-4 service-grid" id="p3">
+					<h4></h4>
+					<img style="height:180px;width:400px" src="" class="img-responsive" alt="" />
+					<h5></h5>
+					<p> </p>
+					<a href="#" class="button1">了解更多</a>
+					</div>
+					<div class="clearfix"> </div>
+                <hr />
+                    <div class="col-md-4 service-grid" id="p4">
+					<h4 ></h4>
+					<img style="height:180px;width:400px" src="" class="img-responsive" alt="" />
+					<h5></h5>
+					<p></p>
+					<a href="#" class="button1">了解更多</a>
+					</div>
+					<div class="col-md-4 service-grid" id="p5">
+					<h4></h4>
+					<img style="height:180px;width:400px" src="" class="img-responsive" alt="" />
+					<h5></h5>
+					<p></p>
+					<a href="#" class="button1"> 了解更多</a>
+					</div>
+					<div class="col-md-4 service-grid" id="p6">
+					<h4></h4>
+					<img style="height:180px;width:400px" src="" class="img-responsive" alt="" />
+					<h5></h5>
+					<p> </p>
+					<a href="#" class="button1">了解更多</a>
+					</div>
+				</div>
+			</div>
+		</div>
+       
+		
+				<div  class="what">
+					<div class="container">
+						<div class="news-header">
+				<h3>植物标本</h3>
+				<p style="color:brown;height:auto;width:92%;margin:auto">制作植物标本是解决植物学教具问题的有力手段之一。课堂教学中若有植物的活体，更加利于学生加深认识。使用植物标本，能够避免部分植物具有区域性、季节性的限制。同时，植物标本保存了植物的形状与色彩，以便日后的重新观察与研究。少数植物标本也具有收藏的价值。</p>
+				</div>
+				</div>
+				<div class="news-grids" style="width:80%;margin:auto">
+				<div class="col-md-6 news-grid">
+<a href="images/2018415195035.jpg" class="swipebox">
+    <img height="500px" width="300px"  src="images/2018415195035.jpg" /></a>
+					<div class="news-info">
+						<p style="color:antiquewhite">银杏</p>		
+						</div>
+					</div>
+					<div class="col-md-6 news-grid1">
+						<div class="news-grid2">
+<a href="images/2018415194637.jpg" class="swipebox">
+    <img height="250px" width="300px" src="images/2018415194637.jpg" /></a>
+						<div class="news-info1">
+                            <p style="color:antiquewhite">有柄石韦</p>
+						</div>
+						</div>
+						<div class="news-grid3">
+<a href="images/山楂.jpg" class="swipebox">
+    <img height="250px"width="300px" src="images/20184152白车轴草02123.jpg" /></a>
+						<div class="news-info1">
+						<p style="color:antiquewhite">山楂</p>
+						</div>
+						</div>
+                        		
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>		
+			<div class="footer-section">
+				<div class="container">			
+					<div class="footer-bottom">
+									<p>Copyright &copy; 2018.山东农业大学智慧农业重点实验室 <a href="http://www.sdsmartag.com/" target="_blank" title="">智慧村镇</a></p>
+									</div>
+									 <script type="text/javascript">
+						$(document).ready(function() {
+							$().UItoTop({ easingType: 'easeOutQuart' });						
+						});
+					</script>
+				<a class="scroll" href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+								</div>
+							</div>
+	</body>
+</html>

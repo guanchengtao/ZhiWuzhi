@@ -1,0 +1,74 @@
+/*
+Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://cKeditor.com/license
+*/
+
+@media print
+{
+	.cKe_path
+	{
+		display: none;
+	}
+}
+
+.cKe_skin_office2003 .cKe_path
+{
+	padding: 3px 3px 0 3px;
+	display: inline-block;
+	float: left;
+}
+
+.cKe_skin_office2003 .cKe_rtl .cKe_path
+{
+	float: right;
+}
+
+.cKe_skin_office2003 .cKe_path a,
+.cKe_skin_office2003 .cKe_path .cKe_empty
+{
+	display: inline-block;
+	float: left;
+	border: solid 1px #f7f8fd;
+	background-color: #f7f8fd;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 4px;
+	padding-right: 4px;
+	margin-bottom : 3px;
+	cursor: default;
+}
+
+.cKe_skin_office2003 .cKe_path .cKe_empty
+{
+	visibility: hidden;
+}
+
+.cKe_skin_office2003 .cKe_rtl .cKe_path a,
+.cKe_skin_office2003 .cKe_rtl .cKe_path cKe_empty
+{
+	float: right;
+}
+
+.cKe_skin_office2003 .cKe_path a:hover,
+.cKe_skin_office2003 .cKe_path a:focus,
+.cKe_skin_office2003 .cKe_path a:active	/* IE */
+{
+	border: solid 1px #316ac5;
+	background-color: #dff1ff;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 4px;
+	padding-right: 4px;
+	outline: none;
+}
+
+.cKe_skin_office2003 .cKe_browser_ie .cKe_rtl .cKe_path a,
+.cKe_skin_office2003 .cKe_browser_ie .cKe_rtl .cKe_path .cKe_empty
+{
+	float: none;
+}
+
+.cKe_skin_office2003 .cKe_path .cKe_label
+{
+	display: none;
+}

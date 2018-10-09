@@ -1,0 +1,6 @@
+/*
+Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://cKeditor.com/license
+*/
+
+a{text-decoration:none;padding:2px 4px 4px 6px;display:block;border-width:1px;border-style:solid;margin:0;}a.cKe_scayt_toogle:hover,a.cKe_scayt_toogle:focus,a.cKe_scayt_toogle:active{border-color:#316ac5;background-color:#dff1ff;color:#000;cursor:pointer;margin:0;}a.cKe_scayt_toogle{color:#316ac5;border-color:#fff;}.scayt_enabled a.cKe_scayt_item{color:#316ac5;border-color:#fff;margin:0;}.scayt_disabled a.cKe_scayt_item{color:gray;border-color:#fff;}.scayt_enabled a.cKe_scayt_item:hover,.scayt_enabled a.cKe_scayt_item:focus,.scayt_enabled a.cKe_scayt_item:active{border-color:#316ac5;background-color:#dff1ff;color:#000;cursor:pointer;}.scayt_disabled a.cKe_scayt_item:hover,.scayt_disabled a.cKe_scayt_item:focus,.scayt_disabled a.cKe_scayt_item:active{border-color:gray;background-color:#dff1ff;color:gray;cursor:no-drop;}.cKe_scayt_set_on,.cKe_scayt_set_off{display:none;}.scayt_enabled .cKe_scayt_set_on{display:none;}.scayt_disabled .cKe_scayt_set_on{display:inline;}.scayt_disabled .cKe_scayt_set_off{display:none;}.scayt_enabled .cKe_scayt_set_off{display:inline;}

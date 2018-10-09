@@ -1,0 +1,287 @@
+/*
+Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://cKeditor.com/license
+*/
+
+/* Special Combo */
+
+.cKe_skin_kama .cKe_rcombo
+{
+	display: inline;
+}
+
+.cKe_skin_kama .cKe_rtl .cKe_rcombo
+{
+}
+
+.cKe_skin_kama .cKe_rcombopanel
+{
+	border: 1px solid #8F8F73;
+	-moz-border-radius-topleft: 0;
+	-webkit-border-top-left-radius: 0;
+	border-top-left-radius: 0;
+	height: auto;
+	_height: 100px;
+}
+
+/* IE6 workaround, shouldn't be here */
+.cKe_skin_kama .cKe_browser_iequirks .cKe_rcombopanel,
+.cKe_skin_kama .cKe_browser_ie6 .cKe_rcombopanel
+{
+/*	width: 150px;*/
+}
+
+.cKe_skin_kama .cKe_rcombo a,
+.cKe_skin_kama .cKe_rcombo a:active,
+.cKe_skin_kama .cKe_rcombo a:hover
+{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-image: url(images/sprites.png);
+	_background-image: url(images/sprites_ie6.png);
+	background-repeat: repeat-x;
+	background-position: 0 -100px;
+	border-bottom:1px solid #DAD9D9;
+	border-right:1px solid #DAD9D9;
+	float:left;
+	padding: 2px;
+	height: 21px;
+	margin-right: 6px;
+	margin-bottom: 5px;
+}
+
+.cKe_skin_kama .cKe_rtl .cKe_rcombo a,
+.cKe_skin_kama .cKe_rtl .cKe_rcombo a:active,
+.cKe_skin_kama .cKe_rtl .cKe_rcombo a:hover
+{
+	float:right;
+	margin-right: 0;
+	margin-left: 6px;
+}
+
+.cKe_skin_kama .cKe_hc .cKe_rcombo a
+{
+	filter: alpha(opacity=100); /* IE */
+	opacity: 1.0; /* Safari, Opera and Mozilla */
+}
+
+.cKe_skin_kama .cKe_rcombo .cKe_label
+{
+	display: none;
+	line-height: 26px;
+	vertical-align: top;
+	margin-right: 5px;
+	filter: alpha(opacity=70); /* IE */
+	opacity: 0.70; /* Safari, Opera and Mozilla */
+	/* background-color: #f1f1e3;	Because of IE6+ClearType */
+}
+
+.cKe_skin_kama .cKe_rtl .cKe_rcombo .cKe_label
+{
+	margin-right: 0;
+	margin-left: 5px;
+}
+
+.cKe_skin_kama .cKe_rcombo .cKe_inline_label
+{
+	line-height: 21px;
+	font-style: italic;
+	color: #666666;
+}
+
+.cKe_skin_kama .cKe_hc .cKe_rcombo .cKe_openbutton
+{
+	vertical-align: top;
+}
+
+.cKe_skin_kama .cKe_hc .cKe_rcombo .cKe_label
+{
+	filter: alpha(opacity=100);
+	opacity: 1.0;
+}
+
+.cKe_skin_kama .cKe_rcombo .cKe_text
+{
+	filter: alpha(opacity=70); /* IE */
+	opacity: 0.70; /* Safari, Opera and Mozilla */
+
+	height: 21px;
+	line-height: 21px;
+	width:60px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: inline-block;
+	margin: 0 2px 0 4px;
+	cursor: default;
+}
+
+.cKe_skin_kama .cKe_rtl .cKe_rcombo .cKe_text
+{
+	margin: 0 4px 0 2px;
+}
+
+.cKe_skin_kama .cKe_rcombo .cKe_openbutton
+{
+	display: inline-block;
+}
+
+.cKe_skin_kama .cKe_rcombo .cKe_openbutton .cKe_icon
+{
+	display: inline-block;
+	background-image: url(images/sprites.png);
+	_background-image: url(images/sprites_ie6.png);
+	background-position: 0 -68px;
+	background-repeat: no-repeat;
+	width: 17px;
+	height: 19px;
+	margin: 1px 2px;
+}
+
+.cKe_skin_kama .cKe_hc .cKe_rcombo .cKe_openbutton .cKe_icon
+{
+	background: none;
+}
+
+.cKe_skin_kama .cKe_browser_iequirks .cKe_rcombo .cKe_openbutton
+{
+	margin-bottom: 0;
+}
+
+.cKe_skin_kama .cKe_rcombo .cKe_off a:hover .cKe_text,
+.cKe_skin_kama .cKe_rcombo .cKe_off a:focus .cKe_text,
+.cKe_skin_kama .cKe_rcombo .cKe_off a:active .cKe_text,
+.cKe_skin_kama .cKe_rcombo .cKe_on .cKe_text
+{
+	border-color: #316ac5;
+	filter: alpha(opacity=100); /* IE */
+	opacity: 1; /* Safari, Opera and Mozilla */
+}
+
+.cKe_skin_kama .cKe_rcombo .cKe_off a:hover .cKe_openbutton,
+.cKe_skin_kama .cKe_rcombo .cKe_off a:focus .cKe_openbutton,
+.cKe_skin_kama .cKe_rcombo .cKe_off a:active .cKe_openbutton,
+.cKe_skin_kama .cKe_rcombo .cKe_on .cKe_openbutton
+{
+	border-color: #316ac5;
+	background-color: #dff1ff;
+}
+
+.cKe_skin_kama .cKe_rcombo .cKe_on .cKe_text
+{
+	-moz-border-radius-bottomleft: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+.cKe_skin_kama .cKe_rcombo .cKe_on .cKe_openbutton
+{
+	-moz-border-radius-bottomright: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.cKe_skin_kama .cKe_rcombo .cKe_disabled .cKe_label
+{
+	filter: alpha(opacity=30); /* IE */
+	opacity: 0.3; /* Safari, Opera and Mozilla */
+}
+
+.cKe_skin_kama .cKe_hc .cKe_rcombo .cKe_disabled .cKe_label
+{
+	filter: alpha(opacity=70);
+	opacity: 0.7;
+}
+
+.cKe_skin_kama .cKe_rcombo .cKe_disabled .cKe_text,
+.cKe_skin_kama .cKe_rcombo .cKe_disabled .cKe_openbutton
+{
+	filter: alpha(opacity=50); /* IE */
+	opacity: 0.5; /* Safari, Opera and Mozilla */
+}
+
+/* IE with zoom != 100% will distort the icons otherwise #4821 */
+.cKe_skin_kama .cKe_browser_ie .cKe_rcombo .cKe_disabled .cKe_openbutton
+{
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale'), alpha(opacity=50);
+}
+.cKe_skin_kama .cKe_browser_ie6 .cKe_rcombo .cKe_disabled .cKe_openbutton
+{
+	filter: alpha(opacity=50);
+}
+
+.cKe_skin_kama .cKe_hc .cKe_rcombo .cKe_disabled .cKe_text,
+.cKe_skin_kama .cKe_hc .cKe_rcombo .cKe_disabled .cKe_openbutton
+{
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+}
+
+.cKe_skin_kama .cKe_rcombo .cKe_disabled .cKe_text
+{
+	color: #fff;
+}
+
+/* RTL */
+
+.cKe_skin_kama .cKe_rtl .cKe_rcombo span
+{
+/*	_zoom: 1;*/
+}
+
+.cKe_skin_kama .cKe_rtl .cKe_rcombo .cKe_text
+{
+/*	_float: left;*/
+}
+
+/* Firefox 2 & WebKit Section */
+
+.cKe_skin_kama .cKe_browser_gecko .cKe_rcombo .cKe_text,
+.cKe_skin_kama .cKe_browser_gecko .cKe_rcombo .cKe_openbutton,
+.cKe_skin_kama .cKe_browser_webkit .cKe_rcombo .cKe_text,
+.cKe_skin_kama .cKe_browser_webkit .cKe_rcombo .cKe_openbutton
+{
+	display: block;
+	float: left;
+}
+
+.cKe_skin_kama .cKe_browser_gecko .cKe_rtl .cKe_rcombo .cKe_text,
+.cKe_skin_kama .cKe_browser_webkit .cKe_rtl .cKe_rcombo .cKe_text
+{
+/*	float: right;*/
+}
+
+.cKe_skin_kama .cKe_browser_gecko .cKe_rcombo .cKe_label,
+.cKe_skin_kama .cKe_browser_webkit .cKe_rcombo .cKe_label
+{
+	/*display: block;*/
+	float: left;
+}
+
+.cKe_skin_kama .cKe_browser_gecko .cKe_rtl .cKe_rcombo .cKe_label,
+.cKe_skin_kama .cKe_browser_gecko .cKe_rtl .cKe_rcombo .cKe_text,
+.cKe_skin_kama .cKe_browser_gecko .cKe_rtl .cKe_rcombo .cKe_openbutton,
+.cKe_skin_kama .cKe_browser_webkit .cKe_rtl .cKe_rcombo .cKe_label,
+.cKe_skin_kama .cKe_browser_webkit .cKe_rtl .cKe_rcombo .cKe_text,
+.cKe_skin_kama .cKe_browser_webkit .cKe_rtl .cKe_rcombo .cKe_openbutton
+{
+	float: right;
+}
+
+.cKe_skin_kama .cKe_browser_ie7 .cKe_rcombo .cKe_text
+{
+	line-height: 18px;
+}
+
+.cKe_skin_kama .cKe_browser_ie6 .cKe_rcombo .cKe_text,
+.cKe_skin_kama .cKe_browser_iequirks .cKe_rcombo .cKe_text
+{
+	height: auto;
+	line-height: 17px;
+}
+
+.cKe_skin_kama .cKe_rtl .cKe_rcombo .cKe_font .cKe_text,
+.cKe_skin_kama .cKe_rtl .cKe_rcombo .cKe_fontSize .cKe_text
+{
+	direction: ltr;
+}

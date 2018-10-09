@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<style type="text/css">
+	    body, html {
+	        width: 100%;
+	        height: 100%;
+	        overflow: hidden;
+	        margin: 0;
+	        font-family: "微软雅黑";
+	    }
+    #allmap
+    {
+        height:100%;
+        width:100%;
+ 
+    }
+	</style>
+    <script src="../../js/jquery-1.7.1.js"></script>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=IFiIC3WAxhVibbv4QC7BueDep037yHyL"></script>
+	<title>地图展示</title>
+</head>
+<body>
+	<div id="allmap"></div>
+    <input type="text" name="name" value="" id="jingdu" />
+    <input type="text" name="name" value="" id="weidu" />
+    <input type="button" name="name" value="添加"/>
+                                   
+</body>
+</html>
+<script type="text/javascript">
+    // 百度地图API功能	
+    map = new BMap.Map("allmap", { mapType: BMAP_SATELLITE_MAP });
+    //map.enableScrollWheelZoom(false);   //放大缩小
+    map.disableDragging();     //禁止拖拽
+    //
+    //map.addEventListener("click", function (e) {
+    //    var jingdu_value = e.point.lng;
+    //    var weidu_value = e.point.lat;
+    //    //alert(jingdu_value + "," + weidu_value);
+    //    $("#jingdu").val(jingdu_value);
+    //    $("#weidu").val(weidu_value);
+    //});
+
+    map.centerAndZoom(new BMap.Point(117.12406, 36.20067), 18);
+    $.getJSON("../ashx/zhiwulist.ashx", {}, function (data) {
+        var gisdata = data.list1;
+        $.each(gisdata, function (index, n) {
+            gisdata[index].FBQuYu = gisdata[index].FBQuYu.substring(-1, 60) + "...<a href='../WebPage/SecondPage.html?id=" + gisdata[index].ZWBianHao + "'>查看详情</a>";
+        }) 
+       var data_info = [[117.12306, 36.20067, "<h4 style='margin:0 0 5px 0;padding:0.2em 0'>" + gisdata[0].ZWXueMing + "</h4>" +
+           "<img style='float:right;margin:3px' id='imgDemo' src='" + gisdata[0].Mu + "' width='140' height='110' title=''/>" +
+           "<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>" + gisdata[0].FBQuYu + "</p>"],
+           [117.12306, 36.20167, "<h4 style='margin:0 0 5px 0;padding:0.2em 0'>" + gisdata[1].ZWXueMing + "</h4>" +
+               "<img style='float:right;margin:3px' id='imgDemo' src='" + gisdata[1].Mu + "' width='140' height='110' title=''/>" +
+               "<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>" + gisdata[1].FBQuYu + "</p>"],
+           [117.12006, 36.20167, "<h4 style='margin:0 0 5px 0;padding:0.2em 0'>" + gisdata[2].ZWXueMing + "</h4>" +
+               "<img style='float:right;margin:3px' id='imgDemo' src='" + gisdata[2].Mu + "' width='140' height='110' title=''/>" +
+               "<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>" + gisdata[2].FBQuYu + "</p>"],
+           [117.12490, 36.20047, "<h4 style='margin:0 0 5px 0;padding:0.2em 0'>" + gisdata[3].ZWXueMing + "</h4>" +
+               "<img style='float:right;margin:3px' id='imgDemo' src='" + gisdata[3].Mu + "' width='140' height='110' title=''/>" +
+               "<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>" + gisdata[3].FBQuYu + "</p>"], [117.12146, 36.20167, "<h4 style='margin:0 0 5px 0;padding:0.2em 0'>" + gisdata[4].ZWXueMing + "</h4>" +
+                   "<img style='float:right;margin:3px' id='imgDemo' src='" + gisdata[4].Mu + "' width='140' height='110' title=''/>" +
+                   "<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>" + gisdata[4].FBQuYu + "</p>"], [117.12790, 36.20047, "<h4 style='margin:0 0 5px 0;padding:0.2em 0'>" + gisdata[5].ZWXueMing + "</h4>" +
+                   "<img style='float:right;margin:3px' id='imgDemo' src='" + gisdata[5].Mu + "' width='140' height='110' title=''/>" +
+                   "<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>" + gisdata[5].FBQuYu + "</p>"], [117.12806, 36.20667, "<h4 style='margin:0 0 5px 0;padding:0.2em 0'>" + gisdata[6].ZWXueMing + "</h4>" +
+                       "<img style='float:right;margin:3px' id='imgDemo' src='" + gisdata[6].Mu + "' width='140' height='110' title=''/>" +
+                       "<p style='margin:0;line-height:1.5;font-size:13px;text-indent:2em'>" + gisdata[6].FBQuYu + "</p>"]
+        ]; 
+       var opts = {
+           width: 350,
+           height: 160,
+           title: "", // 信息窗口标题
+           enableMessage: true//设置允许信息窗发送短息
+       };
+       for (var i = 0; i < data_info.length; i++) {
+           var marker = new BMap.Marker(new BMap.Point(data_info[i][0], data_info[i][1]));  // 创建标注
+           var content = data_info[i][2];
+           map.addOverlay(marker);               // 将标注添加到地图中
+           addClickHandler(content, marker);
+       }
+       function addClickHandler(content, marker) {
+           marker.addEventListener("click", function (e) {
+               openInfo(content, e)
+           }
+           );
+       }
+       function openInfo(content, e) {
+           var p = e.target;
+           var point = new BMap.Point(p.getPosition().lng, p.getPosition().lat);
+           var infoWindow = new BMap.InfoWindow(content, opts);  // 创建信息窗口对象 
+           map.openInfoWindow(infoWindow, point); //开启信息窗口
+       }
+
+
+
+    });
+ 
+</script>

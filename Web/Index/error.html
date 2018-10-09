@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>error</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+    <script>
+    $(function () {
+      $("#slider").responsiveSlides({
+      	auto: true,
+      	nav: true,
+      	speed: 500,
+        namespace: "callbacks",
+        pager: true,
+      });
+    });
+  </script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+ <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+<!---End-smoth-scrolling---->
+</head>
+<body>
+<div class="header" id="home">
+   	<div class="container">
+   		<div class="header-top">
+		<div class="logo">
+	<a href="index.html"><span style="font-size:75px;font-family:STXingkai">山东农业大学校园植物志</span></a>
+   			<p></p>
+   			</div>
+   		<div class='top-menu'>
+   				<label class="menu">  </label>
+   				<ul>
+   	<li><a href='index.html' class="active"><span>首页</span></a></li>
+  	<li><a href='zhiwubiaoben.html' ><span>植物标本</span></a></li>
+    <li><a  href='map.html'><span>植物分布</span></a></li>
+   	<li><a href='contactus.html'><span>联系我们</span></a></li>
+   	<li><a href="http://www.sdau.edu.cn" title="" target="_blank"><span>农大官网</span></a></li>
+    </ul>				
+		 <script>
+             $("label.menu").click(function () {
+                 $(".top-menu ul").slideToggle("slow", function () {
+                 });
+             });
+		 </script>
+	</div>
+</div>
+   </div>
+   	</div>
+
+   	<!-- content-section-starts -->
+			
+<div class="contant">
+		  	<div class="pagenot-found">
+		  		<h3>404</h3>
+		  		<p>错误，植物可能走丢了...</p>
+		  		<a href="index.html">返回首页</a>
+		  		</div>
+		  	</div>
+				
+<div class="footer-section" >
+				<div class="container">			
+					<div class="footer-bottom">
+									<p>Copyright &copy; 2018.山东农业大学智慧农业重点实验室 <a href="http://www.sdsmartag.com/" target="_blank" title="">智慧村镇</a></p>
+									</div>
+									 <script type="text/javascript">
+                                         $(document).ready(function () {
+                                             $().UItoTop({ easingType: 'easeOutQuart' });
+                                         });
+					</script>
+				<a class="scroll" href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+								</div>
+							</div>
+	</body>
+</html>

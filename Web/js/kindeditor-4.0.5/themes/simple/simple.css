@@ -1,0 +1,160 @@
+/* container */
+.Ke-container-simple {
+	display: block;
+	border: 1px solid #CCC;
+	background-color: #FFF;
+	overflow: hidden;
+}
+/* toolbar */
+.Ke-container-simple .Ke-toolbar {
+	border-bottom: 1px solid #CCC;
+	background-color: #FFF;
+	padding: 2px 5px;
+	overflow: hidden;
+}
+.Ke-container-simple .Ke-toolbar .Ke-outline {
+	border: 1px solid #FFF;
+	background-color: transparent;
+	margin: 1px;
+	padding: 1px 2px;
+	font-size: 0;
+	line-height: 0;
+	overflow: hidden;
+	cursor: pointer;
+}
+.Ke-container-simple .Ke-toolbar .Ke-on {
+	border: 1px solid #5690D2;
+}
+.Ke-container-simple .Ke-toolbar .Ke-selected {
+	border: 1px solid #5690D2;
+	background-color: #E9EFF6;
+}
+.Ke-container-simple .Ke-toolbar  .Ke-disabled {
+	cursor: default;
+}
+/* statusbar */
+.Ke-container-simple .Ke-statusbar {
+	position: relative;
+	background-color: #FFF;
+	border-top: 1px solid #CCCCCC;
+	font-size: 0;
+	line-height: 0;
+	*height: 12px;
+	overflow: hidden;
+	text-align: center;
+	cursor: s-resize;
+}
+/* menu */
+.Ke-menu-simple {
+	border: 1px solid #A0A0A0;
+	background-color: #FFF;
+	color: #222222;
+	padding: 2px;
+	font-family: "sans serif",tahoma,verdana,helvetica;
+	font-size: 12px;
+	text-align: left;
+	overflow: hidden;
+}
+.Ke-menu-simple .Ke-menu-item {
+	border: 1px solid #FFF;
+	background-color: #FFF;
+	color: #222222;
+	height: 24px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.Ke-menu-simple .Ke-menu-item-on {
+	border: 1px solid #5690D2;
+	background-color: #FFF;
+}
+/* colorpicKer */
+.Ke-colorpicKer-simple {
+	border: 1px solid #A0A0A0;
+	background-color: #FEFEFE;
+	color: #222222;
+	padding: 2px;
+}
+.Ke-colorpicKer-simple .Ke-colorpicKer-cell {
+	font-size: 0;
+	line-height: 0;
+	border: 1px solid #FEFEFE;
+	cursor: pointer;
+	margin:3px;
+	padding:0;
+}
+.Ke-colorpicKer-simple .Ke-colorpicKer-cell-top {
+	font-family: "sans serif",tahoma,verdana,helvetica;
+	font-size: 12px;
+	line-height: 24px;
+	border: 1px solid #FEFEFE;
+	cursor: pointer;
+	margin:0;
+	padding:0;
+	text-align: center;
+}
+.Ke-colorpicKer-simple .Ke-colorpicKer-cell-on {
+	border: 1px solid #5690D2;
+}
+.Ke-colorpicKer-simple .Ke-colorpicKer-cell-selected {
+	border: 1px solid #2446AB;
+}
+/* dialog */
+.Ke-dialog-simple {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+}
+.Ke-dialog-simple .Ke-dialog-content {
+	color: #333;
+	background-color: #FFF;
+}
+.Ke-dialog-simple .Ke-dialog-shadow {
+	background-color: #FFF;
+}
+.Ke-dialog-simple .Ke-dialog-header {
+	border:0;
+	margin:0;
+	background-color: #FFF;
+	padding: 10px;
+	text-align: left;
+	font: 14px/1 "sans serif",tahoma,verdana,helvetica;
+	font-weight: bold;
+	color: #222222;
+	background-color: #FFF;
+	cursor: move;
+}
+.Ke-dialog-simple .Ke-dialog-body {
+	background-color: #FFF;
+}
+.Ke-dialog-simple .Ke-dialog-footer {
+	background-color: #FFF;
+}
+/* tabs */
+.Ke-dialog-simple .Ke-tabs {
+	font: 12px/1 "sans serif",tahoma,verdana,helvetica;
+	border-bottom:1px solid #A0A0A0;
+	padding-left:5px;
+	margin-bottom:10px;
+}
+.Ke-dialog-simple .Ke-tabs-li {
+	position: relative;
+	border: 1px solid #A0A0A0;
+	background-color: #F0F0EE;
+	margin: 0 2px -1px 0;
+	padding: 0 20px;
+	float: left;
+	line-height: 25px;
+	text-align: center;
+	color: #555;
+	cursor: pointer;
+}
+.Ke-dialog-simple .Ke-tabs-li-selected {
+	background-color: #FFF;
+	border-bottom: 1px solid #FFF;
+	color: #000;
+	cursor: default;
+}
+.Ke-dialog-simple .Ke-tabs-li-on {
+	background-color: #FFF;
+	color: #000;
+}

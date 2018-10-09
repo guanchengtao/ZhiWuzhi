@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://cKeditor.com/license
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Read-only State &mdash; CKeditor Sample</title>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+	<script type="text/javascript" src="../cKeditor.js"></script>
+	<script src="sample.js" type="text/javascript"></script>
+	<link href="sample.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+	//<![CDATA[
+
+var editor;
+
+// The instanceReady event is fired, when an instance of CKeditor has finished
+// its initialization.
+CKeDITOR.on( 'instanceReady', function( ev )
+	{
+		editor = ev.editor;
+
+		// Show this "on" button.
+		document.getElementById( 'readOnlyOn' ).style.display = '';
+
+		// Event fired when the readOnly property changes.
+		editor.on( 'readOnly', function()
+			{
+				document.getElementById( 'readOnlyOn' ).style.display = this.readOnly ? 'none' : '';
+				document.getElementById( 'readOnlyOff' ).style.display = this.readOnly ? '' : 'none';
+			});
+	});
+
+function toggleReadOnly( maKeEditable )
+{
+	// Change the read-only state of the editor.
+	// http://docs.cksource.com/cKeditor_api/symbols/CKeDITOR.editor.html#setReadOnly
+	editor.setReadOnly( maKeEditable );
+}
+
+	//]]>
+	</script>
+
+</head>
+<body>
+	<h1 class="samples">
+		CKeditor Sample &mdash; Using the CKeditor Read-Only API
+	</h1>
+	<div class="description">
+	<p>
+		This sample shows how to use the
+		<code><a class="samples" href="http://docs.cksource.com/cKeditor_api/symbols/CKeDITOR.editor.html#setReadOnly">setReadOnly</a></code>
+		API to put editor into the read-only state that maKes it impossible for users to change the editor contents.
+	</p>
+	<p>
+		For details on how to create this setup check the source code of this sample page.
+	</p>
+	</div>
+
+	<!-- This <div> holds alert messages to be display in the sample page. -->
+	<div id="alerts">
+		<noscript>
+			<p>
+				<strong>CKeditor requires JavaScript to run</strong>. In a browser with no JavaScript
+				support, liKe yours, you should still see the contents (HTML data) and you should
+				be able to edit it normally, without a rich editor interface.
+			</p>
+		</noscript>
+	</div>
+	<form action="sample_posteddata.php" method="post">
+		<p>
+			<textarea class="cKeditor" id="editor1" name="editor1" cols="100" rows="10">&lt;p&gt;This is some &lt;strong&gt;sample text&lt;/strong&gt;. You are using &lt;a href="http://cKeditor.com/"&gt;CKeditor&lt;/a&gt;.&lt;/p&gt;</textarea>
+		</p>
+		<p>
+			<input id="readOnlyOn" onclick="toggleReadOnly();" type="button" value="MaKe it read-only" style="display:none" />
+			<input id="readOnlyOff" onclick="toggleReadOnly( true );" type="button" value="MaKe it editable again" style="display:none" />
+		</p>
+	</form>
+	<div id="footer">
+		<hr />
+		<p>
+			CKeditor - The text editor for the Internet - <a class="samples" href="http://cKeditor.com/">http://cKeditor.com</a>
+		</p>
+		<p id="copy">
+			Copyright &copy; 2003-2011, <a class="samples" href="http://cksource.com/">CKSource</a> - Frederico
+			Knabben. All rights reserved.
+		</p>
+	</div>
+</body>
+</html>
